@@ -1,0 +1,19 @@
+<% include partials/_header.ejs %>
+<div class="container pt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6 ">
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="name">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="password">
+                </div>
+
+                <input type="submit" value="login" class="btn btn-large btn-primary btn-blcok">
+            </form>
+        </div>
+    </div>
+</div>
+<% include partials/_footer.ejs %>

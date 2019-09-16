@@ -1,0 +1,19 @@
+<% include ../partials/_header %>
+<div class="container pt-2">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6 ">
+            <h2>edit your comment on <%= campground.name %></h2>
+
+            <form action="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>?_method=PUT" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="comment[text]" value="<%= comment.text %>">
+                </div>
+
+                <input type="submit" value="submit" class="btn btn-large btn-primary btn-blcok">
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<% include ../partials/_footer %>
